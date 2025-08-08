@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+ul{
+    list-style-type: none;
+}
+img {
+    width: 100%;
+}
+.nav-logo {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.nav-logo--img {
+    width: 40px;
+    height: 40px;
+
+}
+.nav-logo--title{
+    padding: 6px 0px 6px 12px;
+    font-size: 24px;
+    font-weight: 900;
+}
+.nav-buttons-wrapper{
+    display: flex;
+    align-items: baseline;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 24px;
+     color: #243e63;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color: #6415ff;
+}
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.btn {
+    font-weight: 600;
+    color: white;
+    background-color: #6415ff;
+    text-align: center;
+    border: none;
+    border-radius: 9999px; 
+    padding: 10px 32px;
+    line-height: 1.5;
+}
+.purple {
+    color: #6415ff;
+}
+.templates_container{
+    padding-top: 124px;
+    display: flex;
+}
+.templates_left{
+    max-width: 40%;
+}
+.templates_right{
+    max-width: 60%;
+}
+.template_title{
+    font-weight: 700;
+    line-height: 1.25;
+    color: rgba(26, 32, 44, 1);
+    font-size: 48px;
+}
+.template_para {
+    font-size: 18px;
+    margin: 32px 0;
+    letter-spacing: 0.7px;
+    color: rgba(36, 62, 99, 1);
+    line-height: 1.5;
+}
+.customers_display{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: rgb(160, 174, 192);
+    margin: 80px 0;
+    padding-top: 36px;
+    padding-right: 32px;
+}
+.template_img--wrapper{
+    opacity: 0.5;
+    max-width: 100%;
+    padding-top: 20px;
+}
+.input_area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 12px;
+}
+.input_text{
+    width: 100%;
+    line-height: 4.5;
+    text-align: start;
+    border-radius: 9999px;
+}
+.btn.start{
+    position: absolute;
+}
