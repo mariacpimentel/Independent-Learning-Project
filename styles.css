@@ -128,6 +128,7 @@ img {
     align-items: center;
     justify-content: end;
     padding: 12px;
+    right: 20px;
 }
 .input_text{
     width: 100%;
@@ -254,9 +255,24 @@ img {
 }
 .quality_right{
     width: 50%;
+    position: relative;
 }
 .quality_img{
      margin-left: 30px;
+     z-index: 1;
+     border: 0.5px solid #bbc1cc;
+     border-radius: 1%;
+}
+.quality__decor{
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: -28px;
+    bottom: 50px;
+    z-index: -1;
+    display: block;
+    fill: rgba(100, 21, 255, 1);
 }
 
 /* STEPS */
@@ -268,12 +284,23 @@ img {
 .steps_left{
     width: 50%;
     margin-top: 80px;
+    position: relative;
 }
 .steps_right{
     padding: 32px 0 32px 64px;
 }
 .steps_img{
     width: 100%;
+}
+.steps__decor{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 160px;
+    opacity: 0.8;
+    z-index: -10;
 }
 .step_intro{
     padding: 10px 0;
@@ -381,14 +408,16 @@ img {
     align-items: center;
     margin: 80px 0;
     text-align: center;
+    position: relative;
 }
 .plan{
     width: calc(100%/3);
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(229, 231, 235);
-    border-radius: 4%;
+    border-radius: 8px;
     padding: 55px 0px 30px 0px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .plan_top{
     margin-bottom: 50px;
@@ -404,7 +433,7 @@ img {
     left: 0px;
     right: 0px;
     top: 0px;
-    height: 8px;
+    height: 9px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -463,11 +492,29 @@ img {
     padding: 12px 52px;
     line-height: 1.5;
     text-transform: uppercase;
+    transition: all 400ms;
+}
+.plan_buttom:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    top: 1px;
+    transform: translateY(-3px);
+}
+.plan.personal_plan{
+    position: relative;
+    z-index: 1;
 }
 .plan.business_plan{
     margin: 0 42px;
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    position: relative;
+    z-index: 1;
 }
+.plan.enterprise_plan{
+    position: relative;
+    z-index: 1;
+}
+
 .plan_middle.business{
     border-color: rgb(102, 126, 234);;
 }
@@ -484,7 +531,16 @@ img {
 .plan_name.business, .plan_price.business, .pay_plan.business, .plan_user.business, .plan_feature.business{
     color: white;
 }
-
+.plans__decor{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
+}
 
 /* TESTIMONIALS */
 
