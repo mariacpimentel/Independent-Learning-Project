@@ -6,6 +6,7 @@
     font-family: "Inter", sans-serif;
 }
 
+
 /*NAVIGATION*/
 nav {
     display: flex;
@@ -42,18 +43,22 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
 .nav-link{
-    padding: 0 12px;
+    padding: 4px 0px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    margin: 0 24px;
-     color: #243e63;
+    margin: 0 30px;
+    color: #243e63;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms;
 }
 .nav-link:hover{
-    text-decoration: underline;
-    color: #6415ff;
+    color: #243e63;
+    border-bottom-color: #6415ff;
 }
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -68,6 +73,11 @@ img {
     border-radius: 9999px; 
     padding: 10px 32px;
     line-height: 1.5;
+    transition: all 300ms;
+}
+.btn:hover{
+    background-color: #4d13c1;
+    cursor: pointer;
 }
 .purple {
     color: #6415ff;
@@ -103,7 +113,7 @@ img {
     font-weight: 700;
     letter-spacing: 0.6px;
     color: rgb(160, 174, 192);
-    margin: 80px 0;
+    margin: 50px 0;
     padding-top: 36px;
     padding-right: 32px;
 }
@@ -123,7 +133,14 @@ img {
     width: 100%;
     text-align: start;
     border-radius: 9999px;
-    padding: 24px;
+    padding: 24px 30px 24px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid rgb(229, 231, 235);
+    transition: all 300ms;
+}
+.input_text:hover{
+    border-color: #8391a5;
 }
 .btn.start{
     position: absolute;
@@ -299,6 +316,10 @@ img {
 .values_right{
     width: 50%;
 }
+.value_title{
+    display: flex;
+    align-items: center;
+}
 .values_img{
     width: 100%;
     padding-left: 36px;
@@ -309,6 +330,7 @@ img {
 }
 .values_list{
     display: flex;
+    align-items: center;
     padding-top: 30px;
 }
 .value_name{
@@ -329,8 +351,19 @@ img {
 .value{
     padding: 0 20px;
 }
-.value_symbol{
-    color: greenyellow;
+.suitcase{
+    color: #9a1f1f;
+    border: 1px solid #deb5b5;
+    background-color: #deb5b5;
+    border-radius: 50%;
+    padding: 6px 10px;
+}
+.dollar__sign{
+    color: #2e8638;
+    border: 1px solid #c4e6c8;
+    background-color: #c4e6c8;
+    border-radius: 50%;
+    padding: 6px 12px;
 }
 
 /* PRICING */
@@ -365,6 +398,23 @@ img {
     border-bottom: 2px solid rgb(229, 231, 235);
     border-top: 2px solid rgb(229, 231, 235);
     padding: 35px 0;
+}
+.plan_stripe{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.plan_stripe.personal{
+    color: white;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+.plan_stripe.enterprise{
+    color: white;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 .plan_name{
     color: #1a202c;
@@ -406,7 +456,6 @@ img {
 .plan_buttom{
     font-weight: 600;
     color: white;
-    background-color: #6415ff;
     text-align: center;
     margin: 30px 0px 10px 0;
     border: none;
@@ -417,10 +466,23 @@ img {
 }
 .plan.business_plan{
     margin: 0 42px;
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
-.plan.personal_plan{
-    border-top: 12px solid ;
-    border-top-color: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+.plan_middle.business{
+    border-color: rgb(102, 126, 234);;
+}
+.plan_buttom.business{
+    background-color: white;
+    color: #6415ff;
+}
+.plan_buttom.personal{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+.plan_buttom.enterprise{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+.plan_name.business, .plan_price.business, .pay_plan.business, .plan_user.business, .plan_feature.business{
+    color: white;
 }
 
 
@@ -488,9 +550,13 @@ img {
     padding: 16px;
     background: #edf2f7;
     border-radius: 50%;
-    border-color: #edf2f7;
+    border-color: transparent;
     margin: 0 12px;
     transition: all 300ms ease;
+}
+.arrow__btn:hover{
+    background-color: #cfd6dba3;
+    cursor: pointer;
 }
 .arrow{
     color: #6415ff;
@@ -530,10 +596,22 @@ img {
 .red__btn{
     background-color: #f56565;
     margin-right: 20px;
+    border-color: transparent;
+    transition: all 300ms;
+}
+.red__btn:hover{
+    background-color: #f43f3f;
+    cursor: pointer;
 }
 .purple__btn{
     background-color: #6415ff;
     border: 0.7px solid #f7fafc;
+    transition: all 300ms;
+}
+.purple__btn:hover{
+    background-color: #f7fafc;
+    color: #6415ff;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -562,9 +640,16 @@ margin-top: 80px;
     text-transform: uppercase;
 }
 .footer__link{
+    font-size: 14px;
     margin-top: 24px;
+    padding-bottom: 4px;
     color: #f7fafc;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms;
+}
+.footer__link:hover{
+    border-bottom-color: #f7fafc;
 }
 .footer__divider{
     width: 100%;
@@ -602,9 +687,18 @@ margin-top: 80px;
 }
 .footer__social{
     color: #243e63;
-    padding: 8px;
+    padding: 8px 10px;
     margin: 0px 12px;
     border: 1px solid #f7fafc;
     border-radius: 50%;
     background-color: #f7fafc;
+    transition: all 300ms;
+}
+.footer__social:hover{
+    cursor: pointer;
+    border-color: #bcc7d3;
+    background-color: #bcc7d3;
+}
+.fb{
+    padding: 8px 13px;
 }
