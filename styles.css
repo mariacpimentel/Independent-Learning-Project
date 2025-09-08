@@ -6,7 +6,9 @@
     font-family: "Inter", sans-serif;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 /*NAVIGATION*/
 nav {
     display: flex;
@@ -880,6 +882,28 @@ z-index: 2;
 
 
 @media (max-width:550px) {
+    nav{
+        margin: 0 20px;
+    }
+    .section_titles{
+        font-size: 30px;
+    }
+    .templates_container {
+    padding-top: 50px;
+    }
+    .template_para{
+        font-size: 16px;
+        max-width: 300px;
+    }
+    .templates_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-height: 1000px;
+        max-width: 390px;
+    }
     .nav-links {
         display: none;
     }
