@@ -891,9 +891,41 @@ z-index: 2;
     .templates_container {
     padding-top: 50px;
     }
+    .btn.start{
+        position: relative;
+        margin-top: 12px;
+        margin-left: 24px;
+        padding: 14px 130px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .input_text{
+        font-size: 14px;
+        text-align: left;
+        padding: 20px 30px;
+    }
+    .input_area{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .template_img--wrapper{
+        width: 90%;
+        margin-left: 28px;
+    }
+    .templates_left {
+        max-width: 100%;
+    }
+    .templates_right{
+        width: 100%;
+    }
     .template_para{
         font-size: 16px;
         max-width: 300px;
+        text-align: center;
+        right: 30px;
+        margin-left: 38px;
     }
     .templates_container{
         display: flex;
@@ -901,9 +933,8 @@ z-index: 2;
         justify-content: center;
         align-items: center;
         text-align: center;
-        max-height: 1000px;
-        max-width: 390px;
     }
+
     .nav-links {
         display: none;
     }
@@ -912,5 +943,227 @@ z-index: 2;
     }
     .btn__menu {
         display: block;
+    }
+    .customers_display{
+        padding-top: 0px;
+    }
+    .features_title--area{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .section_titles.center{
+        margin-left: 24px;
+    }
+    .intro_text{
+        font-size: 13px;
+        width: 314px;
+        text-align: center;
+    }
+    .feature{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature_text{
+        align-items: center;
+    }
+    .feature_symbol--wrapper{
+        margin-bottom: 20px;
+        margin-left: 18px;
+        padding: 30px;
+    }
+    .feature_para{
+        text-align: center;
+        width: 300px;
+    }
+    .features_container{
+        padding-top: 30px;
+    }
+    .quality_section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .quality_right{
+        width: 300px;
+        height: 300px;
+    }
+    .quality_img{
+        width: 100%;
+        margin: 0px 200px 70px 0px;
+    }
+    .quality_left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 54px;
+    }
+    .section_tag{
+        white-space: nowrap;
+    }
+    .gen_text{
+        text-align: center;
+        font-size: 14px;
+        width: 300px;
+    }
+    .btn.quality_button{
+        white-space: nowrap;
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+    .steps_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .steps_left{
+        width: 90%;
+    }
+    .steps_right{
+        text-align: center;
+        margin-top: 32px;
+    }
+    .step{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .step_number{
+        margin-bottom: 14px;
+    }
+    .values_container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .values_right{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .values_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .values_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .value{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .value_para{
+        text-align: center;
+        width: 300px;
+    }
+    .values_intro{
+        width: 300px;
+    }
+    .section_titles.values{
+        width: 330px;
+        text-align: center;
+    }
+    .section_titles.price{
+        width: 250px;
+        text-align: center;
+    }
+    .plans{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .plan , .plan.business_plan{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .testimonials__container , .testimonials__right , .user__profile , .developers__container , .developer__btn--wrapper, .footer__bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .testimonials__left{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .section_titles.testimonial{
+        white-space: nowrap;
+        margin-bottom: 30px;
+    }
+    .testimonial__title , .user__details{
+        white-space: nowrap;
+    }
+    .testimonial__para{
+        text-align: center;
+        width: 330px;
+        margin-bottom: 24px;
+    }
+    .user__img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 8px;
+    }
+    .testimonials__buttons{
+        margin: 30px 0px 0px 12px;
+       
+    }
+    .developer__para{
+        text-align: center;
+        width: 250px;
+        font-size: 24px;
+        margin-left: 120px;
+        margin-bottom: 50px;
+    }
+    .developers__container{
+        margin: 80px 30px;
+    }
+    .red__btn{
+        /* margin-bottom: 12px; */
+        margin: 0px 0px 12px 2px;
+    }
+    .developer__btn{
+        padding: 14px 40px;
+    }
+    footer{
+        height: 800px;
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .link__group{
+        width: calc(100%/3);
+    }
+    .footer__link{
+        margin-top: 10px;
+    }
+    .link__category{
+        margin-bottom: 8px;
+    }
+    .footer__copyright{
+        margin: 28px 0px;
+    }
+    .footer__bottom{
+        margin-top: 36px;
+    }
+    .footer__divider{
+        margin: 24px 32px;
+    }
+    .quality__decor{
+        top: 60;
     }
 }
